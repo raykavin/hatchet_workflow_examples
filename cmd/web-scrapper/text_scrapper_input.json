@@ -1,0 +1,5 @@
+{
+    "url": "https://www.fibralink.net.br",
+    "element": "//*[@id=\"comp-jyq12ehb\"]/h2",
+    "by": "xpath"
+}

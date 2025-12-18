@@ -1,0 +1,16 @@
+services:
+  workflow_tests:
+    build:
+      context: "."
+      target: development
+      dockerfile: "Dockerfile.dev"
+    container_name: hatchet_workflow_tests
+    working_dir: /workspaces/app
+    volumes:
+      - ../.docker/go/bin:/go/bin:rw
+      - ../.docker/go/pkg:/go/pkg:rw
+      - ./:/go/src/workflow:rw
+    environment:
+      - TZ=America/Belem
+    restart: on-failure
+    tty: true
