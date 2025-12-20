@@ -18,6 +18,15 @@
             "program": "${workspaceFolder}/cmd/find-json-descriptions/main.go",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
+        },
+        {
+            "name": "Elleven Person Info Laucher",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/cmd/elleven-person-info/main.go",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
         }
     ]
 }
