@@ -31,7 +31,7 @@ type ssoTokenResponse struct {
 	AccessToken string `json:"access_token"`
 }
 
-// EllevenPersonInfo is a Hatchet task that retrieves person information from the Elleven Prest ERP
+// EllevenPersonInfo is a Hatchet task that retrieves person information from the Elleven ERP using PRest
 func EllevenPersonInfo(ctx hatchet.Context, input PersonDataInput) (PersonDataOutput, error) {
 	log.Printf("Fetching person information from ERP using document number: %s", input.DocumentNumber)
 
